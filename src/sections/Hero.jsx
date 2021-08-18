@@ -7,6 +7,7 @@ import { useState } from "react";
 
 export default function Hero() {
   const [openContactForm, setOpenContactForm] = useState(false);
+  const [termsAgreed, setTermsAgreed] = useState(false);
   const toggleOpenContactForm = () => setOpenContactForm((p) => !p);
   return (
     <>
@@ -32,27 +33,36 @@ export default function Hero() {
         <div className="right">
           <img src={image} alt="HERO IMAGE" />
         </div>
-        <Modal open={openContactForm} handletoggle={toggleOpenContactForm}>
-          <form action="submit">
-            <h3>Talk to us</h3>
-            <TextField label="Work email" required />
-            <div className="span">
-              <TextField label="First name" required />
-              <TextField label="Last name" required />
-            </div>
-            <div className="span">
-              <Checkbox inputProps={{ "aria-label": "primary checkbox" }} />
-              <p>
-                I agree to Fyle's terms and conditions, and provide consent to
-                send me communication
-              </p>
-            </div>
-            <Button variant="contained" color="primary">
-              Contact Us
-            </Button>
-          </form>
-        </Modal>
       </section>
+      <Modal open={openContactForm} handletoggle={toggleOpenContactForm}>
+        <form action="submit">
+          <h3>Talk to us</h3>
+          <TextField label="Work email" required />
+          <div className="span">
+            <TextField label="First name" required />
+            <TextField label="Last name" required />
+          </div>
+          <div className="span">
+            <Checkbox
+              value={termsAgreed}
+              onChange={(e) => setTermsAgreed(e.target.checked)}
+              inputProps={{ "aria-label": "primary checkbox" }}
+            />
+            <p>
+              I agree to Fyle's terms and conditions, and provide consent to
+              send me communication
+            </p>
+          </div>
+          <Button
+            onClick={() => termsAgreed && console.log(termsAgreed)}
+            variant="contained"
+            color="primary"
+            disabled={!termsAgreed}
+          >
+            Contact Us
+          </Button>
+        </form>
+      </Modal>
     </>
   );
 }
