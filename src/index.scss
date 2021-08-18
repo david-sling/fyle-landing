@@ -189,7 +189,7 @@ section {
   }
   .dots {
     display: flex;
-    margin: 20px;
+    margin: 20px 0;
     align-items: center;
     .clickable {
       height: 25px;
@@ -198,7 +198,7 @@ section {
       cursor: pointer;
     }
     .outline {
-      margin: 10px;
+      // margin: 10px;
       border-radius: 50%;
       transition: 0.5s;
       .white {
@@ -219,6 +219,55 @@ section {
         .white .dot {
           background-color: $primary;
         }
+      }
+    }
+  }
+}
+
+.Project {
+  width: 100%;
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bottom {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+#Album {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  .left {
+    flex: 1;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .right {
+    width: 300px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    .item {
+      width: 100%;
+      padding: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
+      transition: 0.2s;
+      &#active {
+        background-color: $primary;
+        color: white;
       }
     }
   }
