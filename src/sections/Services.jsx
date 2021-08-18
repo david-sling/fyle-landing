@@ -1,4 +1,7 @@
 import React from "react";
+import Carousal from "../components/Carousal";
+
+import carousal from "../config/carousal";
 
 export default function Services() {
   return (
@@ -9,10 +12,15 @@ export default function Services() {
           <h1>Services provide for you</h1>
         </div>
         <div className="right">
-          Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
-          Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus
-          nec risus finibus feugiat et fermentum
+          <p>
+            Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+            Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed
+            lacus nec risus finibus feugiat et fermentum
+          </p>
         </div>
+      </div>
+      <div className="bottom">
+        <Carousal carousal={carousal} />
       </div>
     </section>
   );
