@@ -88,7 +88,7 @@ p {
 }
 
 section {
-  max-width: 900px;
+  max-width: 1200px;
   padding: 10px;
   margin-bottom: 50px;
 }
@@ -271,10 +271,11 @@ form {
 }
 
 #Album {
-  height: 500px;
+  min-height: 500px;
   width: 100%;
   display: flex;
   align-items: stretch;
+  flex-wrap: wrap;
   .left {
     flex: 1;
     img {
@@ -304,6 +305,27 @@ form {
       }
       &:hover {
         background-color: lighten($color: $primary, $amount: 35);
+      }
+    }
+  }
+}
+
+.Growth {
+  @include flex-center;
+  flex-direction: column;
+  .list {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .item {
+      padding: 20px;
+      @include flex-center;
+      flex-direction: column;
+      margin: 20px;
+      transition: 0.2s;
+      &:hover {
+        box-shadow: $shadow-show;
       }
     }
   }
