@@ -4,10 +4,29 @@ import image from "../assets/hero.png";
 import Modal from "../components/Modal";
 import { TextField, Button, Checkbox } from "@material-ui/core";
 import { useState } from "react";
+import axios from "axios";
 
 export default function Hero() {
   const [openContactForm, setOpenContactForm] = useState(false);
   const [termsAgreed, setTermsAgreed] = useState(false);
+  const [formData, setFormData] = useState({});
+
+  const changeFormData = (key) => (e) =>
+    setFormData((p) => ({ ...p, [key]: e.target.value }));
+
+  const send = async (e) => {
+    e.preventDefault();
+    console.log({ formData });
+    const { data } = await axios.post(
+      "https://getform.io/f/2b377a12-41da-4bc0-942f-374fe098eac4",
+      formData
+    );
+    console.log(data);
+    setFormData({});
+    setTermsAgreed(false);
+    setOpenContactForm(false);
+  };
+
   const toggleOpenContactForm = () => setOpenContactForm((p) => !p);
   return (
     <>
@@ -35,12 +54,28 @@ export default function Hero() {
         </div>
       </section>
       <Modal open={openContactForm} handletoggle={toggleOpenContactForm}>
-        <form action="submit">
+        <form action="submit" onSubmit={send}>
           <h3>Talk to us</h3>
-          <TextField label="Work email" required />
+          <TextField
+            type="email"
+            label="Work email"
+            required
+            value={formData.email}
+            onChange={changeFormData("email")}
+          />
           <div className="span">
-            <TextField label="First name" required />
-            <TextField label="Last name" required />
+            <TextField
+              label="First name"
+              required
+              value={formData.firstName}
+              onChange={changeFormData("firstName")}
+            />
+            <TextField
+              label="Last name"
+              required
+              value={formData.lastName}
+              onChange={changeFormData("lastName")}
+            />
           </div>
           <div className="span">
             <Checkbox
@@ -54,7 +89,7 @@ export default function Hero() {
             </p>
           </div>
           <Button
-            onClick={() => termsAgreed && console.log(termsAgreed)}
+            type="submit"
             variant="contained"
             color="primary"
             disabled={!termsAgreed}

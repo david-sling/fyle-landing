@@ -89,14 +89,14 @@ p {
 }
 
 section {
-  max-width: 1200px;
+  max-width: 900px;
   padding: 10px;
   margin-bottom: 60px;
 }
 
 .Hero {
   @include flex-center;
-  justify-content: space-between;
+  // justify-content: space-between;
   width: 100%;
   gap: 50px;
   flex-wrap: wrap-reverse;
