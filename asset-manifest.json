@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/fyle-landing/static/css/main.451d9865.chunk.css",
+    "main.js": "/fyle-landing/static/js/main.3823e732.chunk.js",
+    "main.js.map": "/fyle-landing/static/js/main.3823e732.chunk.js.map",
+    "runtime-main.js": "/fyle-landing/static/js/runtime-main.4ca76ca1.js",
+    "runtime-main.js.map": "/fyle-landing/static/js/runtime-main.4ca76ca1.js.map",
+    "static/js/2.181d9a31.chunk.js": "/fyle-landing/static/js/2.181d9a31.chunk.js",
+    "static/js/2.181d9a31.chunk.js.map": "/fyle-landing/static/js/2.181d9a31.chunk.js.map",
+    "index.html": "/fyle-landing/index.html",
+    "static/css/main.451d9865.chunk.css.map": "/fyle-landing/static/css/main.451d9865.chunk.css.map",
+    "static/js/2.181d9a31.chunk.js.LICENSE.txt": "/fyle-landing/static/js/2.181d9a31.chunk.js.LICENSE.txt",
+    "static/media/album-1.97a89700.png": "/fyle-landing/static/media/album-1.97a89700.png",
+    "static/media/album-2.addeb0aa.jpg": "/fyle-landing/static/media/album-2.addeb0aa.jpg",
+    "static/media/album-3.f93793d1.jpg": "/fyle-landing/static/media/album-3.f93793d1.jpg",
+    "static/media/carousal-1.d48a5744.png": "/fyle-landing/static/media/carousal-1.d48a5744.png",
+    "static/media/carousal-2.fd5859ed.png": "/fyle-landing/static/media/carousal-2.fd5859ed.png",
+    "static/media/carousal-3.fcc245f4.jpg": "/fyle-landing/static/media/carousal-3.fcc245f4.jpg",
+    "static/media/carousal-4.82316318.png": "/fyle-landing/static/media/carousal-4.82316318.png",
+    "static/media/choose-1.c77878b9.svg": "/fyle-landing/static/media/choose-1.c77878b9.svg",
+    "static/media/choose-2.8f5ba948.svg": "/fyle-landing/static/media/choose-2.8f5ba948.svg",
+    "static/media/choose-3.5ebc4e08.svg": "/fyle-landing/static/media/choose-3.5ebc4e08.svg",
+    "static/media/choose-4.5a5896a5.svg": "/fyle-landing/static/media/choose-4.5a5896a5.svg",
+    "static/media/footer.b4ed8924.png": "/fyle-landing/static/media/footer.b4ed8924.png",
+    "static/media/growth-1.b4f830af.svg": "/fyle-landing/static/media/growth-1.b4f830af.svg",
+    "static/media/growth-2.6a40be01.svg": "/fyle-landing/static/media/growth-2.6a40be01.svg",
+    "static/media/growth-3.97b99181.svg": "/fyle-landing/static/media/growth-3.97b99181.svg",
+    "static/media/growth-4.684bb06c.svg": "/fyle-landing/static/media/growth-4.684bb06c.svg",
+    "static/media/hero.414e5ec4.png": "/fyle-landing/static/media/hero.414e5ec4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4ca76ca1.js",
+    "static/js/2.181d9a31.chunk.js",
+    "static/css/main.451d9865.chunk.css",
+    "static/js/main.3823e732.chunk.js"
+  ]
+}
