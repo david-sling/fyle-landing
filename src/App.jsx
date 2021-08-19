@@ -8,7 +8,7 @@ import Footer from "./sections/Footer";
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Router>
+      <Router basename="/fyle-landing">
         <Switch>
           <Route exact path="/" component={Home} />
         </Switch>

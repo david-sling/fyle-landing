@@ -2,4 +2,4 @@
 
 USING REACT
 
-- [Live Site](https://fyle-landing.netlify.app/)
+- [GitHub Pages Link](http://david-sling.github.io/fyle-landing)
