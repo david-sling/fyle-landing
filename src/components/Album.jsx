@@ -1,10 +1,10 @@
 import React from "react";
 import { useState } from "react";
 
-export default function Album({ album = [] }, idx) {
+export default function Album({ album = [] }) {
   const [active, setActive] = useState(0);
   return (
-    <div id="Album" key={idx}>
+    <div id="Album">
       <div className="left">
         <img src={album[active].image} alt={album[active].title} />
       </div>
