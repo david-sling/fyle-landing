@@ -1,18 +1,19 @@
 import React from "react";
 import { useState } from "react";
 
-export default function Album({ album = [] }) {
+export default function Album({ album = [] }, idx) {
   const [active, setActive] = useState(0);
   return (
-    <div id="Album">
+    <div id="Album" key={idx}>
       <div className="left">
-        <img src={album[active].image} alt="" />
+        <img src={album[active].image} alt={album[active].title} />
       </div>
       <div className="right">
         {album.map(({ title, description }, idx) => (
           <div
+            key={idx}
             className="item"
-            id={active == idx && "active"}
+            id={active === idx ? "active" : ""}
             onClick={() => setActive(idx)}
           >
             <h3>{title}</h3>

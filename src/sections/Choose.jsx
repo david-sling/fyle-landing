@@ -7,8 +7,8 @@ export default function Choose() {
       <h2>WHY CHOOSE US</h2>
       <h1>Why We Are Best</h1>
       <div className="list">
-        {choose.map(({ Icon, title, description }) => (
-          <div className="item">
+        {choose.map(({ Icon, title, description }, idx) => (
+          <div className="item" key={idx}>
             <Icon />
             <h3>{title}</h3>
             <p>{description}</p>

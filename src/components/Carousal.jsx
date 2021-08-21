@@ -2,7 +2,6 @@ import { Button } from "@material-ui/core";
 import { ArrowRightAltOutlined } from "@material-ui/icons";
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 export default function Carousal({ carousal = [] }) {
   const [active, setActive] = useState(0);
@@ -16,7 +15,7 @@ export default function Carousal({ carousal = [] }) {
       >
         {carousal.map(
           ({ image, icon: Icon, title, description, link }, idx) => (
-            <div className="item" onClick={() => setActive(idx)}>
+            <div key={idx} className="item" onClick={() => setActive(idx)}>
               <img src={image} alt={title} />
               <div className="overlay">
                 <div className="content">
@@ -36,9 +35,9 @@ export default function Carousal({ carousal = [] }) {
         )}
       </div>
       <div className="dots">
-        {carousal.map((item, idx) => (
-          <div onClick={() => setActive(idx)} className="clickable">
-            <div className="outline" id={idx == active && "active"}>
+        {carousal.map((_, idx) => (
+          <div key={idx} onClick={() => setActive(idx)} className="clickable">
+            <div className="outline" id={idx === active ? "active" : ""}>
               <div className="white">
                 <div className="dot"></div>
               </div>

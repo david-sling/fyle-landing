@@ -50,7 +50,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="right">
-          <img src={image} alt="HERO IMAGE" />
+          <img src={image} alt="HERO" />
         </div>
       </section>
       <Modal open={openContactForm} handletoggle={toggleOpenContactForm}>
