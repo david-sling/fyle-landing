@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/fyle-landing/static/css/main.1c0c7037.chunk.css",
-    "main.js": "/fyle-landing/static/js/main.0ad9a08d.chunk.js",
-    "main.js.map": "/fyle-landing/static/js/main.0ad9a08d.chunk.js.map",
+    "main.js": "/fyle-landing/static/js/main.18be7b3b.chunk.js",
+    "main.js.map": "/fyle-landing/static/js/main.18be7b3b.chunk.js.map",
     "runtime-main.js": "/fyle-landing/static/js/runtime-main.4ca76ca1.js",
     "runtime-main.js.map": "/fyle-landing/static/js/runtime-main.4ca76ca1.js.map",
     "static/js/2.b0eb99ea.chunk.js": "/fyle-landing/static/js/2.b0eb99ea.chunk.js",
@@ -34,6 +34,6 @@
     "static/js/runtime-main.4ca76ca1.js",
     "static/js/2.b0eb99ea.chunk.js",
     "static/css/main.1c0c7037.chunk.css",
-    "static/js/main.0ad9a08d.chunk.js"
+    "static/js/main.18be7b3b.chunk.js"
   ]
 }
